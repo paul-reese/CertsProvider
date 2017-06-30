@@ -1,6 +1,6 @@
 # CertsProvider
 
-Makes use of (https://github.com/cloudfoundry/java-buildpack-security-provider)[Java Buildpack Security Provider] by exposing the certs managed by bosh on a Cloud Foundry installation to a running Java Application. We set a basic RESTful endpoint using `@RestController` on the publizied route for the application running in Cloud Foundry.
+Makes use of [Java Buildpack Security Provider](https://github.com/cloudfoundry/java-buildpack-security-provider) by exposing the certs managed by bosh on a Cloud Foundry installation to a running Java Application. We set a basic RESTful endpoint using `@RestController` on the publizied route for the application running in Cloud Foundry.
 
 ## Development
 The project depends on Cloud Foundry version 1.9 or higher. To build from source, run the following:
