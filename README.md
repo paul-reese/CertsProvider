@@ -14,6 +14,17 @@ A PCF manifest is provided for your use.
 $ cf push
 ```
 
+## Test
+After `cf push` use the provided route to hit the endpoint and observe the logs. Let's watch logs while we hit the endpoint
+```
+$ cf logs certs-provider
+```
+now hit the endpoint
+```
+$ curl certs-provider.<your domain>
+```
+
+
 ## Notes
 If you run into a compile error because CloudFoundryContainerProvider, most likely you will need to update your `~/.m2/settings.xml` to include details below, java-buildpack-container-security-provider is only deployed to Spring repositories.
 
