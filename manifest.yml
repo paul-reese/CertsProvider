@@ -1,0 +1,7 @@
+---
+applications:
+- name: certs-provider
+  memory: 1G
+  path: target/CertsProvider-0.0.1-SNAPSHOT.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  host: certs-provider
