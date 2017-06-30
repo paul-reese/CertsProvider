@@ -8,6 +8,12 @@ The project depends on Cloud Foundry version 1.9 or higher. To build from source
 $ ./mvnw clean package
 ```
 
+## Deploy
+A PCF manifest is provided for your use.
+```
+$ cf push
+```
+
 ## Notes
 If you run into a compile error because CloudFoundryContainerProvider, most likely you will need to update your `~/.m2/settings.xml` to include details below, java-buildpack-container-security-provider is only deployed to Spring repositories.
 
